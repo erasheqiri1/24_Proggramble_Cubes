@@ -41,3 +41,8 @@ def run_problem(problem_name: str):
     print("=" * 70)
     print("Algorithm: Genetic Algorithm (GA)")
     print("-" * 70)
+
+    # Krijo UDP për instancën e zgjedhur
+    udp = programmable_cubes_UDP(problem_name)
+
+    start_time = time.time()
