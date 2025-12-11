@@ -46,3 +46,18 @@ def run_problem(problem_name: str):
     udp = programmable_cubes_UDP(problem_name)
 
     start_time = time.time()
+
+    best_x, best_f = run_ga(
+        udp,
+        num_generations=400,
+        log_interval=5
+    )
+
+    elapsed = time.time() - start_time
+
+    print("-" * 70)
+    print(f"[{problem_name}] Best fitness achieved: {best_f:.6f}")
+    print(f"[{problem_name}] Total time: {elapsed:.1f} s")
+    print("-" * 70)
+
+    return best_x, best_f
