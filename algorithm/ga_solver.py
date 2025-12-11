@@ -37,3 +37,14 @@ def _init_population(
         fitness.append(f)
 
     return pop, fitness
+
+
+def _tournament_select(pop: List[np.ndarray], fitness: List[float], k: int) -> np.ndarray:
+    """Return index of best individual among k random picks (minimization)."""
+    n = len(pop)
+    indices = [random.randrange(n) for _ in range(k)]
+    best_idx = min(indices, key=lambda i: fitness[i])
+    return pop[best_idx].copy()
+
+
+
