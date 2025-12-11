@@ -19,3 +19,19 @@ def parse_problem(argv) -> str | None:
         if arg in ("--problem", "-p") and i + 1 < len(argv):
             return argv[i + 1]
     return None
+
+def run_problem(problem_name: str):
+    """
+    Run ONLY GA for problem_name.
+    """
+    if problem_name not in VALID_PROBLEMS:
+        raise ValueError(
+            f"Unknown problem '{problem_name}'. "
+            f"Valid options: {', '.join(VALID_PROBLEMS)}"
+        )
+
+    print("\n" + "=" * 70)
+    print(f"Running problem: {problem_name}")
+    print("=" * 70)
+    print("Algorithm: Genetic Algorithm (GA)")
+    print("-" * 70)
