@@ -20,6 +20,12 @@ def parse_problem(argv) -> str | None:
             return argv[i + 1]
     return None
 
+    # Krijo UDP për instancën e zgjedhur
+    udp = programmable_cubes_UDP(problem_name)
+
+    start_time = time.time()
+
+
 def run_problem(problem_name: str):
     """
     Run ONLY GA for problem_name.
