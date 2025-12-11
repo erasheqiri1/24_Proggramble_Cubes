@@ -57,3 +57,54 @@ def _crossover(p1: np.ndarray, p2: np.ndarray, cr: float) -> Tuple[np.ndarray, n
     return c1, c2
 
 
+def _mutate(x: np.ndarray, lb: np.ndarray, ub: np.ndarray, mr: float) -> np.ndarray:
+    """Gaussian mutation, clipped to [lb, ub]."""
+    if mr <= 0:
+        return x
+
+    dim = x.size
+    mask = np.random.rand(dim) < mr
+    if not mask.any():
+        return x
+
+    # Step size scaled to range of each variable
+    sigma = 0.05 * (ub - lb + 1e-12)
+    noise = np.random.randn(dim) * sigma
+    x_new = x.copy()
+    x_new[mask] += noise[mask]
+    return np.clip(x_new, lb, ub)
+
+
+def run_ga(
+        udp,
+        pop_size: int = 80,
+        num_generations: int = 400,
+        tournament_size: int = 4,
+        crossover_rate: float = 0.9,
+        mutation_rate: float = 0.05,
+        seed: int | None = None,
+        log_interval: int = 25,
+) -> Tuple[np.ndarray, float]:
+    """
+    Plain Genetic Algorithm that works directly with programmable_cubes_UDP.
+
+    - Minimizes udp.fitness(x)  (smaller = better; works even if values are negative)
+    - Uses:
+        * tournament selection
+        * uniform crossover
+        * Gaussian mutation (clipped to bounds)
+
+    Returns:
+        best_x, best_fitness
+    """
+    start_time = time.time()
+
+    lb, ub = udp.get_bounds()
+    lb = np.asarray(lb, dtype=float)
+    ub = np.asarray(ub, dtype=float)
+
+    pop, fitness = _init_population(udp, pop_size, seed)
+    best_idx = int(np.argmin(fitness))
+    best_x = pop[best_idx].copy()
+    best_f = fitness[best_idx]
+
