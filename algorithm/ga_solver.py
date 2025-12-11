@@ -46,5 +46,14 @@ def _tournament_select(pop: List[np.ndarray], fitness: List[float], k: int) -> n
     best_idx = min(indices, key=lambda i: fitness[i])
     return pop[best_idx].copy()
 
+def _crossover(p1: np.ndarray, p2: np.ndarray, cr: float) -> Tuple[np.ndarray, np.ndarray]:
+    """Simple uniform crossover."""
+    if random.random() > cr:
+        return p1.copy(), p2.copy()
+
+    mask = np.random.rand(p1.size) < 0.5
+    c1 = np.where(mask, p1, p2)
+    c2 = np.where(mask, p2, p1)
+    return c1, c2
 
 
