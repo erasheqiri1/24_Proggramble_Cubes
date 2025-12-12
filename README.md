@@ -112,3 +112,10 @@ Enterprise: longest runtime and frequent plateaus
 
 The results confirm that problem complexity directly impacts convergence speed and optimization difficulty.
 Valid solutions were obtained for all instances.
+
+## Conclusion
+
+The Genetic Algorithm provides a robust and scalable approach for the Programmable Cubes problem.
+While not guaranteed to find a global optimum, the method consistently produces feasible and competitive solutions within acceptable computational limits.
+
+
