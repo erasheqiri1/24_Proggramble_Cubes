@@ -100,9 +100,9 @@ pip install -r requirements.txt
 
 ## Run examples
 
-python main.py --problem ISS
-python main.py --problem JWST
-python main.py --problem Enterprise
+* python main.py --problem ISS
+* python main.py --problem JWST
+* python main.py --problem Enterprise
 
 ### Results
 
