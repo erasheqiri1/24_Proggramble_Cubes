@@ -118,4 +118,10 @@ Valid solutions were obtained for all instances.
 The Genetic Algorithm provides a robust and scalable approach for the Programmable Cubes problem.
 While not guaranteed to find a global optimum, the method consistently produces feasible and competitive solutions within acceptable computational limits.
 
+## Notes
+
+Results depend on random initialization          
+Multiple runs were performed per instance         
+Best-performing runs were retained
+
 
