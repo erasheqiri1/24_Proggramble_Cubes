@@ -1,0 +1,94 @@
+python main.py --problem JWST
+
+======================================================================
+Running problem: JWST
+======================================================================
+Algorithm: Genetic Algorithm (GA)
+----------------------------------------------------------------------
+[GA] Gen    5 | best = -0.013524 | avg = -0.003340 | elapsed = 405.6s
+[GA] Gen   10 | best = -0.019524 | avg = -0.010209 | elapsed = 417.7s
+[GA] Gen   15 | best = -0.023533 | avg = -0.017672 | elapsed = 427.4s
+[GA] Gen   20 | best = -0.027533 | avg = -0.021788 | elapsed = 437.8s
+[GA] Gen   25 | best = -0.029533 | avg = -0.023640 | elapsed = 448.6s
+[GA] Gen   30 | best = -0.031533 | avg = -0.023746 | elapsed = 458.3s
+[GA] Gen   35 | best = -0.033533 | avg = -0.026374 | elapsed = 467.4s
+[GA] Gen   40 | best = -0.033533 | avg = -0.027427 | elapsed = 476.8s
+[GA] Gen   45 | best = -0.035533 | avg = -0.028479 | elapsed = 487.4s
+[GA] Gen   50 | best = -0.039533 | avg = -0.030525 | elapsed = 498.6s
+[GA] Gen   55 | best = -0.039533 | avg = -0.030318 | elapsed = 512.7s
+[GA] Gen   60 | best = -0.041524 | avg = -0.033668 | elapsed = 527.3s
+[GA] Gen   65 | best = -0.041533 | avg = -0.031646 | elapsed = 541.6s
+[GA] Gen   70 | best = -0.043533 | avg = -0.034905 | elapsed = 553.2s
+[GA] Gen   75 | best = -0.043533 | avg = -0.035956 | elapsed = 563.6s
+[GA] Gen   80 | best = -0.043533 | avg = -0.033906 | elapsed = 573.6s
+[GA] Gen   85 | best = -0.047524 | avg = -0.034487 | elapsed = 583.5s
+[GA] Gen   90 | best = -0.047524 | avg = -0.037519 | elapsed = 594.5s
+[GA] Gen   95 | best = -0.049524 | avg = -0.037845 | elapsed = 605.9s
+[GA] Gen  100 | best = -0.049524 | avg = -0.038167 | elapsed = 616.5s
+[GA] Gen  105 | best = -0.051524 | avg = -0.040968 | elapsed = 625.5s
+[GA] Gen  110 | best = -0.051524 | avg = -0.042513 | elapsed = 634.4s
+[GA] Gen  115 | best = -0.051524 | avg = -0.041568 | elapsed = 643.3s
+[GA] Gen  120 | best = -0.051524 | avg = -0.042378 | elapsed = 652.9s
+[GA] Gen  125 | best = -0.051524 | avg = -0.044061 | elapsed = 666.0s
+[GA] Gen  130 | best = -0.051524 | avg = -0.043115 | elapsed = 681.3s
+[GA] Gen  135 | best = -0.053419 | avg = -0.040406 | elapsed = 697.2s
+[GA] Gen  140 | best = -0.053524 | avg = -0.043168 | elapsed = 712.5s
+[GA] Gen  145 | best = -0.055524 | avg = -0.043694 | elapsed = 726.7s
+[GA] Gen  150 | best = -0.055524 | avg = -0.044849 | elapsed = 740.4s
+[GA] Gen  155 | best = -0.057524 | avg = -0.046398 | elapsed = 749.0s
+[GA] Gen  160 | best = -0.059524 | avg = -0.046202 | elapsed = 757.5s
+[GA] Gen  165 | best = -0.059524 | avg = -0.045474 | elapsed = 765.9s
+[GA] Gen  170 | best = -0.059524 | avg = -0.046754 | elapsed = 774.5s
+[GA] Gen  175 | best = -0.059524 | avg = -0.045231 | elapsed = 783.0s
+[GA] Gen  180 | best = -0.059524 | avg = -0.046638 | elapsed = 791.4s
+[GA] Gen  185 | best = -0.059524 | avg = -0.045683 | elapsed = 799.9s
+[GA] Gen  190 | best = -0.061524 | avg = -0.047699 | elapsed = 808.2s
+[GA] Gen  195 | best = -0.061524 | avg = -0.048796 | elapsed = 816.6s
+[GA] Gen  200 | best = -0.061524 | avg = -0.045148 | elapsed = 824.8s
+[GA] Gen  205 | best = -0.061524 | avg = -0.049148 | elapsed = 833.0s
+[GA] Gen  210 | best = -0.061524 | avg = -0.048974 | elapsed = 841.0s
+[GA] Gen  215 | best = -0.061524 | avg = -0.045548 | elapsed = 849.0s
+[GA] Gen  220 | best = -0.061524 | avg = -0.047445 | elapsed = 857.1s
+[GA] Gen  225 | best = -0.061524 | avg = -0.047050 | elapsed = 865.1s
+[GA] Gen  230 | best = -0.061524 | avg = -0.045882 | elapsed = 873.0s
+[GA] Gen  235 | best = -0.061533 | avg = -0.048134 | elapsed = 881.1s
+[GA] Gen  240 | best = -0.061533 | avg = -0.048912 | elapsed = 888.9s
+[GA] Gen  245 | best = -0.061533 | avg = -0.050493 | elapsed = 896.6s
+[GA] Gen  250 | best = -0.061533 | avg = -0.048946 | elapsed = 904.4s
+[GA] Gen  255 | best = -0.061533 | avg = -0.049894 | elapsed = 912.3s
+[GA] Gen  260 | best = -0.061533 | avg = -0.048001 | elapsed = 920.1s
+[GA] Gen  265 | best = -0.061533 | avg = -0.047307 | elapsed = 928.5s
+[GA] Gen  270 | best = -0.061533 | avg = -0.049039 | elapsed = 936.3s
+[GA] Gen  275 | best = -0.061533 | avg = -0.048574 | elapsed = 944.0s
+[GA] Gen  280 | best = -0.061533 | avg = -0.049550 | elapsed = 951.8s
+[GA] Gen  285 | best = -0.063533 | avg = -0.050858 | elapsed = 959.8s
+[GA] Gen  290 | best = -0.063533 | avg = -0.048840 | elapsed = 967.6s
+[GA] Gen  295 | best = -0.063533 | avg = -0.049498 | elapsed = 975.5s
+[GA] Gen  300 | best = -0.063533 | avg = -0.051537 | elapsed = 983.4s
+[GA] Gen  305 | best = -0.063533 | avg = -0.049864 | elapsed = 991.4s
+[GA] Gen  310 | best = -0.063533 | avg = -0.048527 | elapsed = 999.3s
+[GA] Gen  315 | best = -0.063533 | avg = -0.051416 | elapsed = 1007.2s
+[GA] Gen  320 | best = -0.063533 | avg = -0.049268 | elapsed = 1014.9s
+[GA] Gen  325 | best = -0.063533 | avg = -0.048178 | elapsed = 1022.6s
+[GA] Gen  330 | best = -0.063533 | avg = -0.051597 | elapsed = 1030.3s
+[GA] Gen  335 | best = -0.063533 | avg = -0.049451 | elapsed = 1038.0s
+[GA] Gen  340 | best = -0.063533 | avg = -0.048013 | elapsed = 1045.4s
+[GA] Gen  345 | best = -0.063533 | avg = -0.049486 | elapsed = 1053.6s
+[GA] Gen  350 | best = -0.063533 | avg = -0.049773 | elapsed = 1061.3s
+[GA] Gen  355 | best = -0.063533 | avg = -0.049645 | elapsed = 1068.9s
+[GA] Gen  360 | best = -0.063533 | avg = -0.047044 | elapsed = 1076.7s
+[GA] Gen  365 | best = -0.065533 | avg = -0.048405 | elapsed = 1084.6s
+[GA] Gen  370 | best = -0.065533 | avg = -0.049997 | elapsed = 1092.5s
+[GA] Gen  375 | best = -0.065533 | avg = -0.051547 | elapsed = 1100.4s
+[GA] Gen  380 | best = -0.065533 | avg = -0.050064 | elapsed = 1108.2s
+[GA] Gen  385 | best = -0.065533 | avg = -0.050252 | elapsed = 1116.1s
+[GA] Gen  390 | best = -0.065533 | avg = -0.049518 | elapsed = 1123.8s
+[GA] Gen  395 | best = -0.065533 | avg = -0.051648 | elapsed = 1131.7s
+[GA] Gen  400 | best = -0.065533 | avg = -0.050420 | elapsed = 1139.7s
+[GA] Finished: best fitness = -0.065533 | total time = 1139.7s
+----------------------------------------------------------------------
+[JWST] Best fitness achieved: -0.065533
+[JWST] Total time: 1139.7 s
+----------------------------------------------------------------------
+
+Done.
