@@ -1,94 +1,94 @@
-python main.py --problem ISS
+ python main.py --problem ISS
 
 ======================================================================
 Running problem: ISS
 ======================================================================
 Algorithm: Genetic Algorithm (GA)
 ----------------------------------------------------------------------
-[GA] Gen    5 | best = -0.040310 | avg = -0.004064 | elapsed = 34.3s
-[GA] Gen   10 | best = -0.052423 | avg = -0.016063 | elapsed = 38.3s
-[GA] Gen   15 | best = -0.060360 | avg = -0.032860 | elapsed = 42.0s
-[GA] Gen   20 | best = -0.076233 | avg = -0.041278 | elapsed = 46.3s
-[GA] Gen   25 | best = -0.076603 | avg = -0.045546 | elapsed = 50.9s
-[GA] Gen   30 | best = -0.100042 | avg = -0.046940 | elapsed = 55.3s
-[GA] Gen   35 | best = -0.100042 | avg = -0.057354 | elapsed = 58.9s
-[GA] Gen   40 | best = -0.115915 | avg = -0.076037 | elapsed = 62.6s
-[GA] Gen   45 | best = -0.132158 | avg = -0.086889 | elapsed = 66.1s
-[GA] Gen   50 | best = -0.132158 | avg = -0.082073 | elapsed = 69.2s
-[GA] Gen   55 | best = -0.132158 | avg = -0.096795 | elapsed = 71.6s
-[GA] Gen   60 | best = -0.140095 | avg = -0.098484 | elapsed = 74.4s
-[GA] Gen   65 | best = -0.140095 | avg = -0.096901 | elapsed = 76.9s
-[GA] Gen   70 | best = -0.140095 | avg = -0.095539 | elapsed = 79.0s
-[GA] Gen   75 | best = -0.140095 | avg = -0.089234 | elapsed = 81.4s
-[GA] Gen   80 | best = -0.140095 | avg = -0.088821 | elapsed = 85.3s
-[GA] Gen   85 | best = -0.140095 | avg = -0.094310 | elapsed = 89.4s
-[GA] Gen   90 | best = -0.140095 | avg = -0.090409 | elapsed = 91.9s
-[GA] Gen   95 | best = -0.140095 | avg = -0.090011 | elapsed = 94.3s
-[GA] Gen  100 | best = -0.148031 | avg = -0.095034 | elapsed = 96.6s
-[GA] Gen  105 | best = -0.148031 | avg = -0.097680 | elapsed = 98.9s
-[GA] Gen  110 | best = -0.148031 | avg = -0.102752 | elapsed = 101.1s
-[GA] Gen  115 | best = -0.155968 | avg = -0.101061 | elapsed = 103.3s
-[GA] Gen  120 | best = -0.155968 | avg = -0.095740 | elapsed = 105.5s
-[GA] Gen  125 | best = -0.155968 | avg = -0.100739 | elapsed = 107.8s
-[GA] Gen  130 | best = -0.155968 | avg = -0.098887 | elapsed = 110.0s
-[GA] Gen  135 | best = -0.155968 | avg = -0.105074 | elapsed = 112.3s
-[GA] Gen  140 | best = -0.155968 | avg = -0.093747 | elapsed = 114.6s
-[GA] Gen  145 | best = -0.155968 | avg = -0.101076 | elapsed = 117.0s
-[GA] Gen  150 | best = -0.155968 | avg = -0.094186 | elapsed = 119.3s
-[GA] Gen  155 | best = -0.155968 | avg = -0.098687 | elapsed = 121.4s
-[GA] Gen  160 | best = -0.155968 | avg = -0.102560 | elapsed = 123.7s
-[GA] Gen  165 | best = -0.155968 | avg = -0.108052 | elapsed = 125.9s
-[GA] Gen  170 | best = -0.155968 | avg = -0.097475 | elapsed = 128.1s
-[GA] Gen  175 | best = -0.155968 | avg = -0.095241 | elapsed = 130.2s
-[GA] Gen  180 | best = -0.155968 | avg = -0.099890 | elapsed = 132.4s
-[GA] Gen  185 | best = -0.155968 | avg = -0.104504 | elapsed = 134.5s
-[GA] Gen  190 | best = -0.155968 | avg = -0.105102 | elapsed = 136.7s
-[GA] Gen  195 | best = -0.155968 | avg = -0.095395 | elapsed = 138.9s
-[GA] Gen  200 | best = -0.155968 | avg = -0.104246 | elapsed = 141.1s
-[GA] Gen  205 | best = -0.155968 | avg = -0.095810 | elapsed = 143.3s
-[GA] Gen  210 | best = -0.155968 | avg = -0.095695 | elapsed = 145.4s
-[GA] Gen  215 | best = -0.155968 | avg = -0.107844 | elapsed = 147.6s
-[GA] Gen  220 | best = -0.155968 | avg = -0.099688 | elapsed = 149.8s
-[GA] Gen  225 | best = -0.155968 | avg = -0.104584 | elapsed = 151.9s
-[GA] Gen  230 | best = -0.155968 | avg = -0.102074 | elapsed = 154.1s
-[GA] Gen  235 | best = -0.155968 | avg = -0.096450 | elapsed = 156.2s
-[GA] Gen  240 | best = -0.155968 | avg = -0.103211 | elapsed = 158.4s
-[GA] Gen  245 | best = -0.155968 | avg = -0.103309 | elapsed = 160.5s
-[GA] Gen  250 | best = -0.155968 | avg = -0.096452 | elapsed = 162.7s
-[GA] Gen  255 | best = -0.155968 | avg = -0.092250 | elapsed = 164.8s
-[GA] Gen  260 | best = -0.155968 | avg = -0.098028 | elapsed = 166.9s
-[GA] Gen  265 | best = -0.155968 | avg = -0.100772 | elapsed = 169.1s
-[GA] Gen  270 | best = -0.155968 | avg = -0.103454 | elapsed = 171.3s
-[GA] Gen  275 | best = -0.155968 | avg = -0.103789 | elapsed = 173.5s
-[GA] Gen  280 | best = -0.155968 | avg = -0.106765 | elapsed = 175.6s
-[GA] Gen  285 | best = -0.155968 | avg = -0.104368 | elapsed = 177.7s
-[GA] Gen  290 | best = -0.155968 | avg = -0.095001 | elapsed = 179.9s
-[GA] Gen  295 | best = -0.155968 | avg = -0.095819 | elapsed = 182.1s
-[GA] Gen  300 | best = -0.155968 | avg = -0.106373 | elapsed = 184.3s
-[GA] Gen  305 | best = -0.155968 | avg = -0.105534 | elapsed = 186.4s
-[GA] Gen  310 | best = -0.155968 | avg = -0.104662 | elapsed = 188.6s
-[GA] Gen  315 | best = -0.155968 | avg = -0.099569 | elapsed = 190.7s
-[GA] Gen  320 | best = -0.155968 | avg = -0.103358 | elapsed = 192.9s
-[GA] Gen  325 | best = -0.155968 | avg = -0.100041 | elapsed = 195.0s
-[GA] Gen  330 | best = -0.155968 | avg = -0.096263 | elapsed = 197.2s
-[GA] Gen  335 | best = -0.155968 | avg = -0.096698 | elapsed = 199.3s
-[GA] Gen  340 | best = -0.155968 | avg = -0.104584 | elapsed = 201.4s
-[GA] Gen  345 | best = -0.155968 | avg = -0.098854 | elapsed = 203.5s
-[GA] Gen  350 | best = -0.155968 | avg = -0.109615 | elapsed = 205.7s
-[GA] Gen  355 | best = -0.155968 | avg = -0.099648 | elapsed = 207.8s
-[GA] Gen  360 | best = -0.155968 | avg = -0.097596 | elapsed = 210.0s
-[GA] Gen  365 | best = -0.155968 | avg = -0.099320 | elapsed = 212.1s
-[GA] Gen  370 | best = -0.155968 | avg = -0.094436 | elapsed = 214.2s
-[GA] Gen  375 | best = -0.155968 | avg = -0.094849 | elapsed = 216.3s
-[GA] Gen  380 | best = -0.155968 | avg = -0.100126 | elapsed = 218.4s
-[GA] Gen  385 | best = -0.155968 | avg = -0.099337 | elapsed = 220.5s
-[GA] Gen  390 | best = -0.155968 | avg = -0.102764 | elapsed = 222.6s
-[GA] Gen  395 | best = -0.155968 | avg = -0.105560 | elapsed = 224.8s
-[GA] Gen  400 | best = -0.155968 | avg = -0.095489 | elapsed = 227.0s
-[GA] Finished: best fitness = -0.155968 | total time = 227.0s
+[GA] Gen    5 | best = -0.037529 | avg = -0.009310 | elapsed = 18.5s
+[GA] Gen   10 | best = -0.053402 | avg = -0.029370 | elapsed = 20.4s
+[GA] Gen   15 | best = -0.061339 | avg = -0.035568 | elapsed = 22.1s
+[GA] Gen   20 | best = -0.077212 | avg = -0.050645 | elapsed = 24.0s
+[GA] Gen   25 | best = -0.085148 | avg = -0.056345 | elapsed = 25.9s
+[GA] Gen   30 | best = -0.093085 | avg = -0.063685 | elapsed = 27.9s
+[GA] Gen   35 | best = -0.101021 | avg = -0.070163 | elapsed = 29.9s
+[GA] Gen   40 | best = -0.101021 | avg = -0.073917 | elapsed = 32.0s
+[GA] Gen   45 | best = -0.108958 | avg = -0.079783 | elapsed = 33.9s
+[GA] Gen   50 | best = -0.116894 | avg = -0.083925 | elapsed = 35.9s
+[GA] Gen   55 | best = -0.116894 | avg = -0.086640 | elapsed = 37.9s
+[GA] Gen   60 | best = -0.116894 | avg = -0.089366 | elapsed = 39.9s
+[GA] Gen   65 | best = -0.124831 | avg = -0.088767 | elapsed = 41.8s
+[GA] Gen   70 | best = -0.124831 | avg = -0.095351 | elapsed = 43.6s
+[GA] Gen   75 | best = -0.124831 | avg = -0.091400 | elapsed = 45.4s
+[GA] Gen   80 | best = -0.132767 | avg = -0.094939 | elapsed = 47.4s
+[GA] Gen   85 | best = -0.132767 | avg = -0.098788 | elapsed = 49.3s
+[GA] Gen   90 | best = -0.132767 | avg = -0.101947 | elapsed = 51.1s
+[GA] Gen   95 | best = -0.132767 | avg = -0.101932 | elapsed = 53.0s
+[GA] Gen  100 | best = -0.132767 | avg = -0.096208 | elapsed = 54.8s
+[GA] Gen  105 | best = -0.132767 | avg = -0.098011 | elapsed = 56.6s
+[GA] Gen  110 | best = -0.132767 | avg = -0.097214 | elapsed = 58.4s
+[GA] Gen  115 | best = -0.132767 | avg = -0.096335 | elapsed = 60.2s
+[GA] Gen  120 | best = -0.132767 | avg = -0.098919 | elapsed = 62.1s
+[GA] Gen  125 | best = -0.132767 | avg = -0.098901 | elapsed = 64.0s
+[GA] Gen  130 | best = -0.132941 | avg = -0.099364 | elapsed = 65.8s
+[GA] Gen  135 | best = -0.132941 | avg = -0.100930 | elapsed = 67.5s
+[GA] Gen  140 | best = -0.132941 | avg = -0.104536 | elapsed = 69.2s
+[GA] Gen  145 | best = -0.132941 | avg = -0.101593 | elapsed = 70.9s
+[GA] Gen  150 | best = -0.132941 | avg = -0.100844 | elapsed = 72.5s
+[GA] Gen  155 | best = -0.140878 | avg = -0.103058 | elapsed = 74.2s
+[GA] Gen  160 | best = -0.140878 | avg = -0.102604 | elapsed = 75.9s
+[GA] Gen  165 | best = -0.140878 | avg = -0.103610 | elapsed = 77.7s
+[GA] Gen  170 | best = -0.148814 | avg = -0.105600 | elapsed = 79.5s
+[GA] Gen  175 | best = -0.148814 | avg = -0.105385 | elapsed = 81.2s
+[GA] Gen  180 | best = -0.156751 | avg = -0.103820 | elapsed = 83.1s
+[GA] Gen  185 | best = -0.156751 | avg = -0.104817 | elapsed = 84.8s
+[GA] Gen  190 | best = -0.156751 | avg = -0.101887 | elapsed = 86.6s
+[GA] Gen  195 | best = -0.156751 | avg = -0.109224 | elapsed = 88.3s
+[GA] Gen  200 | best = -0.156751 | avg = -0.113664 | elapsed = 90.0s
+[GA] Gen  205 | best = -0.156751 | avg = -0.107463 | elapsed = 91.7s
+[GA] Gen  210 | best = -0.156751 | avg = -0.116128 | elapsed = 93.5s
+[GA] Gen  215 | best = -0.156751 | avg = -0.113593 | elapsed = 95.3s
+[GA] Gen  220 | best = -0.156751 | avg = -0.109568 | elapsed = 97.0s
+[GA] Gen  225 | best = -0.156751 | avg = -0.106278 | elapsed = 98.8s
+[GA] Gen  230 | best = -0.156751 | avg = -0.111082 | elapsed = 100.6s
+[GA] Gen  235 | best = -0.164687 | avg = -0.114613 | elapsed = 102.6s
+[GA] Gen  240 | best = -0.164687 | avg = -0.115581 | elapsed = 104.5s
+[GA] Gen  245 | best = -0.164687 | avg = -0.114229 | elapsed = 106.2s
+[GA] Gen  250 | best = -0.164687 | avg = -0.115083 | elapsed = 107.9s
+[GA] Gen  255 | best = -0.164687 | avg = -0.110066 | elapsed = 109.7s
+[GA] Gen  260 | best = -0.164687 | avg = -0.121042 | elapsed = 111.6s
+[GA] Gen  265 | best = -0.164687 | avg = -0.120466 | elapsed = 113.4s
+[GA] Gen  270 | best = -0.164687 | avg = -0.114247 | elapsed = 115.3s
+[GA] Gen  275 | best = -0.164687 | avg = -0.104868 | elapsed = 117.1s
+[GA] Gen  280 | best = -0.164687 | avg = -0.116213 | elapsed = 118.9s
+[GA] Gen  285 | best = -0.164687 | avg = -0.109633 | elapsed = 120.8s
+[GA] Gen  290 | best = -0.172624 | avg = -0.118193 | elapsed = 122.6s
+[GA] Gen  295 | best = -0.172624 | avg = -0.114573 | elapsed = 124.3s
+[GA] Gen  300 | best = -0.172624 | avg = -0.121107 | elapsed = 126.2s
+[GA] Gen  305 | best = -0.172624 | avg = -0.120103 | elapsed = 127.9s
+[GA] Gen  310 | best = -0.172624 | avg = -0.117462 | elapsed = 129.7s
+[GA] Gen  315 | best = -0.172624 | avg = -0.128522 | elapsed = 131.4s
+[GA] Gen  320 | best = -0.172624 | avg = -0.125512 | elapsed = 133.2s
+[GA] Gen  325 | best = -0.172624 | avg = -0.122086 | elapsed = 134.9s
+[GA] Gen  330 | best = -0.172624 | avg = -0.119684 | elapsed = 136.6s
+[GA] Gen  335 | best = -0.172624 | avg = -0.127420 | elapsed = 138.3s
+[GA] Gen  340 | best = -0.172624 | avg = -0.125660 | elapsed = 140.1s
+[GA] Gen  345 | best = -0.172624 | avg = -0.111830 | elapsed = 141.8s
+[GA] Gen  350 | best = -0.172624 | avg = -0.125630 | elapsed = 143.6s
+[GA] Gen  355 | best = -0.172624 | avg = -0.127327 | elapsed = 145.3s
+[GA] Gen  360 | best = -0.172624 | avg = -0.121560 | elapsed = 147.0s
+[GA] Gen  365 | best = -0.172624 | avg = -0.115571 | elapsed = 148.8s
+[GA] Gen  370 | best = -0.172624 | avg = -0.121166 | elapsed = 150.5s
+[GA] Gen  375 | best = -0.172624 | avg = -0.118153 | elapsed = 152.2s
+[GA] Gen  380 | best = -0.172624 | avg = -0.127498 | elapsed = 153.9s
+[GA] Gen  385 | best = -0.172624 | avg = -0.127507 | elapsed = 155.7s
+[GA] Gen  390 | best = -0.172624 | avg = -0.130696 | elapsed = 157.4s
+[GA] Gen  395 | best = -0.172624 | avg = -0.119539 | elapsed = 159.1s
+[GA] Gen  400 | best = -0.172624 | avg = -0.120598 | elapsed = 160.8s
+[GA] Finished: best fitness = -0.172624 | total time = 160.8s
 ----------------------------------------------------------------------
-[ISS] Best fitness achieved: -0.155968
-[ISS] Total time: 227.0 s
+[ISS] Best fitness achieved: -0.172624
+[ISS] Total time: 160.8 s
 ----------------------------------------------------------------------
 
 Done.

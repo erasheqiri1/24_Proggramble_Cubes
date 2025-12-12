@@ -4,7 +4,6 @@ from typing import Tuple, List
 
 import numpy as np
 def _evaluate(udp, x: np.ndarray) -> float:
-    # udp.fitness usually returns a 1-element sequence
     val = udp.fitness(x)
     if isinstance(val, (list, tuple, np.ndarray)):
         return float(val[0])
@@ -16,7 +15,7 @@ def _init_population(
     pop_size: int,
     seed: int | None = None
 ) -> Tuple[List[np.ndarray], List[float]]:
-    """Uniform random initialization inside bounds."""
+
     if seed is not None:
         np.random.seed(seed)
         random.seed(seed)
@@ -39,14 +38,14 @@ def _init_population(
 
 
 def _tournament_select(pop: List[np.ndarray], fitness: List[float], k: int) -> np.ndarray:
-    """Kthen indeksin e individit më të mirë nga k zgjedhje të rastësishme """
+
     n = len(pop)
     indices = [random.randrange(n) for _ in range(k)]
     best_idx = min(indices, key=lambda i: fitness[i])
     return pop[best_idx].copy()
 
 def _crossover(p1: np.ndarray, p2: np.ndarray, cr: float) -> Tuple[np.ndarray, np.ndarray]:
-    """Simple uniform crossover."""
+
     if random.random() > cr:
         return p1.copy(), p2.copy()
 
@@ -57,7 +56,7 @@ def _crossover(p1: np.ndarray, p2: np.ndarray, cr: float) -> Tuple[np.ndarray, n
 
 
 def _mutate(x: np.ndarray, lb: np.ndarray, ub: np.ndarray, mr: float) -> np.ndarray:
-    """Mutacion Gaussian, i kufizuar brenda intervalit [lb, ub]"""
+
     if mr <= 0:
         return x
 
@@ -85,6 +84,7 @@ def run_ga(
         seed: int | None = None,
         log_interval: int = 25,
 ) -> Tuple[np.ndarray, float]:
+
   # Algoritëm gjenetik i thjeshtë që minimizon udp.fitness(x) duke përdorur selection, crossover dhe mutation.
 
     start_time = time.time()
@@ -121,11 +121,11 @@ def run_ga(
             if len(new_pop) < pop_size:
                 new_pop.append(c2)
 
-   # Vlerëso
+    # Vlerëso
         pop = new_pop
         fitness = [_evaluate(udp, x) for x in pop]
 
-  # Gjurmo më të mirin
+    # Gjurmo më të mirin
 
         current_best_idx = int(np.argmin(fitness))
         current_best_x = pop[current_best_idx]

@@ -14,15 +14,10 @@ def parse_problem(argv) -> str | None:
         if arg in ("--problem", "-p") and i + 1 < len(argv):
             return argv[i + 1]
     return None
-    udp = programmable_cubes_UDP(problem_name)
-
-    start_time = time.time()
 
 
 def run_problem(problem_name: str):
-    """
-    Run ONLY GA for problem_name.
-    """
+
     if problem_name not in VALID_PROBLEMS:
         raise ValueError(
             f"Unknown problem '{problem_name}'. "
