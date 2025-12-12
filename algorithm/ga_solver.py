@@ -4,7 +4,6 @@ from typing import Tuple, List
 
 import numpy as np
 def _evaluate(udp, x: np.ndarray) -> float:
-    """Evaluate decision vector x with the UDP, return scalar fitness."""
     # udp.fitness usually returns a 1-element sequence
     val = udp.fitness(x)
     if isinstance(val, (list, tuple, np.ndarray)):
@@ -40,7 +39,7 @@ def _init_population(
 
 
 def _tournament_select(pop: List[np.ndarray], fitness: List[float], k: int) -> np.ndarray:
-    """Return index of best individual among k random picks (minimization)."""
+    """Kthen indeksin e individit më të mirë nga k zgjedhje të rastësishme """
     n = len(pop)
     indices = [random.randrange(n) for _ in range(k)]
     best_idx = min(indices, key=lambda i: fitness[i])
@@ -58,7 +57,7 @@ def _crossover(p1: np.ndarray, p2: np.ndarray, cr: float) -> Tuple[np.ndarray, n
 
 
 def _mutate(x: np.ndarray, lb: np.ndarray, ub: np.ndarray, mr: float) -> np.ndarray:
-    """Gaussian mutation, clipped to [lb, ub]."""
+    """Mutacion Gaussian, i kufizuar brenda intervalit [lb, ub]"""
     if mr <= 0:
         return x
 
@@ -67,7 +66,8 @@ def _mutate(x: np.ndarray, lb: np.ndarray, ub: np.ndarray, mr: float) -> np.ndar
     if not mask.any():
         return x
 
-    # Step size scaled to range of each variable
+    # Hapi i ndryshimit shkallëzohet sipas intervalit të secilës variabël.
+
     sigma = 0.05 * (ub - lb + 1e-12)
     noise = np.random.randn(dim) * sigma
     x_new = x.copy()
@@ -85,18 +85,8 @@ def run_ga(
         seed: int | None = None,
         log_interval: int = 25,
 ) -> Tuple[np.ndarray, float]:
-    """
-    Plain Genetic Algorithm that works directly with programmable_cubes_UDP.
+  # Algoritëm gjenetik i thjeshtë që minimizon udp.fitness(x) duke përdorur selection, crossover dhe mutation.
 
-    - Minimizes udp.fitness(x)  (smaller = better; works even if values are negative)
-    - Uses:
-        * tournament selection
-        * uniform crossover
-        * Gaussian mutation (clipped to bounds)
-
-    Returns:
-        best_x, best_fitness
-    """
     start_time = time.time()
 
     lb, ub = udp.get_bounds()
@@ -113,10 +103,12 @@ def run_ga(
     for gen in range(1, num_generations + 1):
         new_pop: List[np.ndarray] = []
 
-        # Elitism: keep the current best
+       # Elitizëm: ruan individin më të mirë aktual
+
         new_pop.append(best_x.copy())
 
-        # Fill the rest of the population
+       # Plotëso pjesën tjetër të popullatës
+
         while len(new_pop) < pop_size:
             p1 = _tournament_select(pop, fitness, tournament_size)
             p2 = _tournament_select(pop, fitness, tournament_size)
@@ -129,11 +121,12 @@ def run_ga(
             if len(new_pop) < pop_size:
                 new_pop.append(c2)
 
-        # Evaluate
+   # Vlerëso
         pop = new_pop
         fitness = [_evaluate(udp, x) for x in pop]
 
-        # Track best
+  # Gjurmo më të mirin
+
         current_best_idx = int(np.argmin(fitness))
         current_best_x = pop[current_best_idx]
         current_best_f = fitness[current_best_idx]
@@ -141,8 +134,7 @@ def run_ga(
         if current_best_f < best_f:
             best_f = current_best_f
             best_x = current_best_x.copy()
-
-        # Optional logging
+# Regjistrim opsional (logging)
         if log_interval and gen % log_interval == 0:
             avg_f = float(np.mean(fitness))
             print(
