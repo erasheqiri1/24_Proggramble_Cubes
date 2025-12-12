@@ -80,6 +80,9 @@ The implementation is fully ESA-compliant and does not rely on custom heuristics
 │   # excludes cache files, virtual environments, IDE settings,
 │   # and optionally generated results.
 │
+├── requirements.txt
+│   # External Python dependencies (numpy, numba, matplotlib)
+│
 └── README.md
     # Project documentation:
     # describes the problem, methodology, structure, and results.
