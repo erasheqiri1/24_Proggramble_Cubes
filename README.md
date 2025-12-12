@@ -87,3 +87,28 @@ The implementation is fully ESA-compliant and does not rely on custom heuristics
     # Project documentation:
     # describes the problem, methodology, structure, and results.
 ```
+
+## Execution
+
+Requirements:
+
+Python 3.9+  
+NumPy   
+Numba (optional)
+
+Run example:
+```
+python main.py --problem ISS
+python main.py --problem JWST
+python main.py --problem Enterprise
+```
+### Results
+
+Observed behavior:
+
+ISS: fast convergence and stable solutions         
+JWST: gradual improvement          
+Enterprise: longest runtime and frequent plateaus
+
+The results confirm that problem complexity directly impacts convergence speed and optimization difficulty.
+Valid solutions were obtained for all instances.
