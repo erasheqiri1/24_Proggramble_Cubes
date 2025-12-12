@@ -108,3 +108,47 @@ def run_ga(
     best_x = pop[best_idx].copy()
     best_f = fitness[best_idx]
 
+
+
+    for gen in range(1, num_generations + 1):
+        new_pop: List[np.ndarray] = []
+
+        # Elitism: keep the current best
+        new_pop.append(best_x.copy())
+
+        # Fill the rest of the population
+        while len(new_pop) < pop_size:
+            p1 = _tournament_select(pop, fitness, tournament_size)
+            p2 = _tournament_select(pop, fitness, tournament_size)
+
+            c1, c2 = _crossover(p1, p2, crossover_rate)
+            c1 = _mutate(c1, lb, ub, mutation_rate)
+            c2 = _mutate(c2, lb, ub, mutation_rate)
+
+            new_pop.append(c1)
+            if len(new_pop) < pop_size:
+                new_pop.append(c2)
+
+        # Evaluate
+        pop = new_pop
+        fitness = [_evaluate(udp, x) for x in pop]
+
+        # Track best
+        current_best_idx = int(np.argmin(fitness))
+        current_best_x = pop[current_best_idx]
+        current_best_f = fitness[current_best_idx]
+
+        if current_best_f < best_f:
+            best_f = current_best_f
+            best_x = current_best_x.copy()
+
+        # Optional logging
+        if log_interval and gen % log_interval == 0:
+            avg_f = float(np.mean(fitness))
+            print(
+                f"[GA] Gen {gen:4d} | best = {best_f:.6f} | avg = {avg_f:.6f} "
+                f"| elapsed = {time.time() - start_time:.1f}s"
+            )
+
+    print(f"[GA] Finished: best fitness = {best_f:.6f} | total time = {time.time() - start_time:.1f}s")
+    return best_x, best_f
