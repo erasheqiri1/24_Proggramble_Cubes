@@ -9,18 +9,11 @@ VALID_PROBLEMS = ("ISS", "JWST", "Enterprise")
 
 
 def parse_problem(argv) -> str | None:
-    """
-    Lexon nga komand line:
-        python main.py --problem ISS
-        python main.py -p JWST
-    Kthen emrin e problemit ose None nëse s'është dhënë.
-    """
+    # Lexon problemin nga command line (-p/--problem) dhe kthen emrin ose None nëse nuk jepet
     for i, arg in enumerate(argv):
         if arg in ("--problem", "-p") and i + 1 < len(argv):
             return argv[i + 1]
     return None
-
-    # Krijo UDP për instancën e zgjedhur
     udp = programmable_cubes_UDP(problem_name)
 
     start_time = time.time()
@@ -42,7 +35,7 @@ def run_problem(problem_name: str):
     print("Algorithm: Genetic Algorithm (GA)")
     print("-" * 70)
 
-    # Krijo UDP për instancën e zgjedhur
+    # Krijo UDP për instancen e zgjedhur
     udp = programmable_cubes_UDP(problem_name)
 
     start_time = time.time()
@@ -62,11 +55,11 @@ def run_problem(problem_name: str):
 
     return best_x, best_f
 if __name__ == "__main__":
-    # Lexo problem nga komand line nëse jepet
+    # Lexo problem nga komand line nese jepet
     problem = parse_problem(sys.argv)
 
     if problem is None:
-        # Default nëse nuk jepet asgjë
+        # Default nese s'jepet asgje
         print("No --problem specified. Using default: ISS")
         problem = "ISS"
 
