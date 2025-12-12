@@ -88,20 +88,22 @@ The implementation is fully ESA-compliant and does not rely on custom heuristics
     # describes the problem, methodology, structure, and results.
 ```
 
-## Execution
+## Requirements
 
-Requirements:
+- Python 3.9 or higher
+- Required dependencies are listed in requirements.txt
 
-Python 3.9+  
-NumPy   
-Numba (optional)
+Install dependencies:
+bash
+pip install -r requirements.txt
 
-Run example:
-```
+
+## Run examples
+
 python main.py --problem ISS
 python main.py --problem JWST
-python main.py --problem Enterprise
-```
+python main.py --problem Enterprise
+
 ### Results
 
 Observed behavior:
