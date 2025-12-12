@@ -61,3 +61,15 @@ def run_problem(problem_name: str):
     print("-" * 70)
 
     return best_x, best_f
+if __name__ == "__main__":
+    # Lexo problem nga komand line nëse jepet
+    problem = parse_problem(sys.argv)
+
+    if problem is None:
+        # Default nëse nuk jepet asgjë
+        print("No --problem specified. Using default: ISS")
+        problem = "ISS"
+
+    best_solution, best_fitness = run_problem(problem)
+
+    print("\nDone.")
